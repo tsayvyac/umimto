@@ -1,0 +1,25 @@
+:root {
+    --prim: #fff;
+    --text: blue;
+}
+
+body {
+    background-color: var(--prim) ;
+}
+
+body.dark-theme {
+    --prim:#fff;
+    --text: chocolate;
+}
+
+p {
+    text-align: center;
+    display: block;
+    width: 1000px;
+    color: var(--text);
+    font-size: 40px;
+}
+
+body.dark-theme p {
+    color: var(--text);
+}

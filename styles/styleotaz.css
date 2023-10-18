@@ -1,0 +1,175 @@
+:root {
+    --blue:#2760CC;
+    --gray:#ebebeb;
+    --darkblue:#102696;
+    --darkgray:#d3d0d0;
+}
+
+.mainotaz {
+    /* background-color: #fff;
+    border: 1px solid var(--darkgray);
+    border-radius: 5px; */
+    display: block;
+    margin: 150px 50px 0 50px;
+}
+
+.layout {
+    display: flex;
+    margin: 100px 150px 100px 100px;
+}
+
+.layout__aside {
+    margin-left: 20px;
+    color: #60d399;
+    display: block;
+    width: 500px;
+    line-height: 38px;
+}
+
+.layout__aside h1 {
+    font-weight: 900;
+    font-size: 40px;
+}
+
+.task__container {
+    border: solid 2px var(--darkgray);
+    border-radius: 10px;
+    background: #fff;
+    padding: 50px 0px 50px 50px;
+    transition: all .5s;
+}
+
+.task__container h1 {
+    margin-top: 15px;
+    margin-right: 20px;
+    font-weight: 900;
+}
+
+.inf__qus h4 {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.inf__qus small {
+    font-size: 14px;
+}
+
+.task__container p {
+    margin-bottom: 20px;
+    font-size: 30px;
+    font-weight: 800;
+}
+
+.odpovedi {
+    margin-left: 100px;
+    margin-bottom: 100px;
+}
+
+.odpovedi p {
+    margin-top: 50px;
+    font-size: 30px;
+    font-weight: 800;
+    margin-bottom: 40px;
+}
+
+.odpovedi form {
+    width: 100%;
+}
+
+.odpovedi textarea {
+    height: 100px;
+}
+
+.odpovedi button {
+    font-size: 14px;
+    display: block;
+    margin-top: 10px;
+    padding: 0.5rem 1rem;
+    font-weight: bold;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    background: var(--blue);
+    transition: all .5s ease;
+    /* float: right; */
+}
+
+.odpovedi button:hover {
+    background: var(--darkblue);
+}
+
+textarea {
+    resize: none;
+    border: solid 2px var(--darkgray);
+    border-radius: 20px;
+    width: 75%;
+    height: 150px;
+    font-size: 15px;
+    padding: 15px 15px 0px 15px;
+    background-color: #f2f2f2;
+}
+
+textarea:focus {
+    background-color: #fff;
+    border-color: var(--blue);
+}
+
+.btn__task button {
+    background-color: var(--blue);
+    width: 150px;
+    height: 30px;
+    margin-top: 20px;
+    color: #fff;
+    border-radius: 15px;
+    font-size: 15px;
+    transition: all .2s ease;
+    border: solid 2px var(--blue);
+    cursor: pointer;
+}
+
+.btn__task button:hover {
+    background-color: #fff;
+    color: var(--blue);
+}
+
+.subjects {
+    margin-top: 20px;
+}
+
+.subjects select {
+    border: solid 2px var(--blue);
+    border-radius: 15px;
+    background-color: #fff;
+    width: 200px;
+    height: 30px;
+    text-align: center;
+    font-size: 15px;
+}
+
+.dis__option {
+    color: var(--darkgray);
+}
+
+/* ZMENIT */
+@media (max-width: 1200px) {
+    .layout {
+        margin: 100px 100px 0px 50px;
+        transition: all .5s;
+    }
+    .layout__aside {
+        display: none;
+    }
+    .odpovedi {
+        margin-left: 50px;
+    }
+}
+
+@media (max-width: 700px) {
+    .layout {
+        margin: 10px;
+    }
+    .odpovedi {
+        margin: 10px 10px 50px 10px;
+    }
+}
